@@ -15,7 +15,7 @@
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
         Dim invest As New Investment
         If cboInvestmentType.SelectedIndex = -1 Or txtShares.Text = "" Then
-            MessageBox.Show("Ingrese un dato correcto"
+            MessageBox.Show("Ingrese un dato correcto")
         End If
         With invest
             .Type = CType(cboInvestmentType.SelectedIndex, Investment.InvestmentType)
